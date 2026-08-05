@@ -476,10 +476,10 @@
 
     <section class="about reveal" id="about">
       <h2 class="section-title">About</h2>
-      <p>I position myself for roles where platform direction, delivery accountability, and reliability engineering are treated as a single responsibility. My experience covers technical execution and the cross-team alignment required to keep enterprise programs moving.</p>
-      <p>At REW, I have led migration and modernization workstreams from discovery through stabilization, balancing customer constraints with engineering quality. This includes cloud-hybrid transitions, endpoint modernization, and repeatable operational models.</p>
-      <p>I build environments that teams can scale: automation standards, clear runbooks, and governance patterns that reduce drift. Instead of one-off fixes, I focus on reusable systems that lower operational risk over time.</p>
-      <p>I am strongest in Lead and Principal contexts where hands-on architecture, mentorship, and delivery leadership are all expected in parallel.</p>
+      <p>I target Lead and Principal scopes where technical depth, delivery ownership, and operational governance are all part of the same job.</p>
+      <p>The distinction I focus on is durability. Anyone can fix a broken environment. The harder work is building the standards, automation, and runbooks that prevent the same problem from recurring &mdash; and making those systems good enough that they keep working after you leave. At B2BSoft, the gold image automation framework I built became foundational to the team&rsquo;s deployment workflow long after I moved on. At REW, the documentation standards I established are still being used across new projects.</p>
+      <p>I am equally comfortable leading technical direction as I am writing the Ansible playbook or the PowerShell module that proves the approach works. For me, those are not separate activities. The credibility to lead technically comes from still being able to do the work.</p>
+      <p>I am strongest in Lead and Principal contexts where hands-on architecture, delivery governance, and measurable business outcomes are all expected in parallel.</p>
     </section>
 
     <section class="reveal" id="skills">
@@ -495,7 +495,7 @@
           </div>
         </article>
         <article class="skill-card">
-          <h3>Frameworks & Platforms</h3>
+          <h3>Frameworks &amp; Platforms</h3>
           <div class="tags">
             <span class="tag target">Azure</span>
             <span class="tag target">Microsoft 365</span>
@@ -503,27 +503,33 @@
             <span class="tag target">Azure DevOps</span>
             <span class="tag">VMware HA</span>
             <span class="tag">Cloud PC</span>
+            <span class="tag">Entra ID</span>
+            <span class="tag">Kubernetes / AKS</span>
           </div>
         </article>
         <article class="skill-card">
           <h3>Tools</h3>
           <div class="tags">
             <span class="tag target">Ansible</span>
-            <span class="tag target">Terraform</span>
+            <span class="tag target">PowerShell DSC</span>
+            <span class="tag">Terraform</span>
             <span class="tag">Zabbix</span>
             <span class="tag">Dynatrace</span>
             <span class="tag">HAProxy</span>
-            <span class="tag">Nginx</span>
+            <span class="tag">FSLogix</span>
+            <span class="tag">Commvault</span>
+            <span class="tag">DattoRMM</span>
           </div>
         </article>
         <article class="skill-card">
-          <h3>Soft Skills</h3>
+          <h3>Leadership &amp; Delivery</h3>
           <div class="tags">
             <span class="tag target">Program Ownership</span>
             <span class="tag target">Technical Strategy</span>
             <span class="tag target">Cross-Team Alignment</span>
+            <span class="tag">Operational Governance</span>
             <span class="tag">Mentoring</span>
-            <span class="tag">Stakeholder Management</span>
+            <span class="tag">Technical Interviewing</span>
           </div>
         </article>
       </div>
@@ -533,8 +539,18 @@
       <h2 class="section-title">Featured Projects</h2>
       <div class="project-grid">
         <article class="project-card">
+          <h3>Gold Image Automation &mdash; Production Resilience Under Incident</h3>
+          <p class="project-copy"><strong>Problem:</strong> Production servers experiencing performance degradation during peak hours with no fast recovery path. <strong>Solution:</strong> Gold image automation (already built for provisioning consistency) deployed fully configured VMs in ~30 minutes and integrated them into the load balancer before cascading failures could set in. <strong>Result:</strong> Incident contained. Framework operationalized as foundation for DSC and Ansible deployment workflows org-wide.</p>
+          <div class="tags">
+            <span class="tag">PowerShell DSC</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">VMware</span>
+            <span class="tag">Incident Response</span>
+          </div>
+        </article>
+        <article class="project-card">
           <h3>Enterprise Migration Portfolio Delivery</h3>
-          <p class="project-copy"><strong>Problem:</strong> Clients needed coordinated modernization with minimal operational disruption. <strong>Solution:</strong> Led end-to-end planning and execution across M365, Azure VM, SharePoint, and Cloud PC transitions. <strong>Result:</strong> Delivered 50+ projects with stable post-migration operations.</p>
+          <p class="project-copy"><strong>Problem:</strong> Customers needed coordinated modernization across Microsoft 365, Azure, SharePoint, and endpoint platforms with minimal disruption and tight budget constraints. <strong>Solution:</strong> Led end-to-end migration design and execution across 50+ projects. Built documentation standards and reusable delivery frameworks that improved consistency portfolio-wide. <strong>Result:</strong> 50+ projects delivered with stable post-migration outcomes and measurably lower delivery overhead.</p>
           <div class="tags">
             <span class="tag">Azure</span>
             <span class="tag">Microsoft 365</span>
@@ -543,8 +559,8 @@
           </div>
         </article>
         <article class="project-card">
-          <h3>FSLogix Adoption and Profile Reliability</h3>
-          <p class="project-copy"><strong>Problem:</strong> Legacy profile model caused instability and support overhead in remote sessions. <strong>Solution:</strong> Directed RDS to FSLogix migration with custom script-based controls. <strong>Result:</strong> Migrated around 800 user profiles with improved session consistency.</p>
+          <h3>FSLogix Profile Reliability Program</h3>
+          <p class="project-copy"><strong>Problem:</strong> Legacy RDS profile model was generating persistent user instability and support escalations. <strong>Solution:</strong> Planned and executed full RDS to FSLogix migration program, including custom PowerShell stabilization tooling for edge cases the standard toolset could not handle. <strong>Result:</strong> ~800 user profiles migrated with improved session consistency and reduced support load.</p>
           <div class="tags">
             <span class="tag">PowerShell</span>
             <span class="tag">RDS</span>
@@ -554,21 +570,11 @@
         </article>
         <article class="project-card">
           <h3>CI/CD Governance Modernization</h3>
-          <p class="project-copy"><strong>Problem:</strong> Legacy pipeline practices increased release variability across teams. <strong>Solution:</strong> Modernized Azure DevOps pipelines to YAML and introduced standardized deployment flows. <strong>Result:</strong> Better repeatability, cleaner handoffs, and lower release friction.</p>
+          <p class="project-copy"><strong>Problem:</strong> Classic pipelines and legacy build tooling increased release variability and slowed cross-team delivery. <strong>Solution:</strong> Migrated Azure DevOps pipelines to YAML, standardized deployment flows, removed Cake build dependencies. <strong>Result:</strong> Improved repeatability, cleaner handoffs, and reduced release friction. Test environment stability enabled QA autonomous deployment.</p>
           <div class="tags">
             <span class="tag">Azure DevOps</span>
             <span class="tag">YAML</span>
             <span class="tag">Release Governance</span>
-          </div>
-        </article>
-        <article class="project-card">
-          <h3>Operational Visibility and Recovery Baseline</h3>
-          <p class="project-copy"><strong>Problem:</strong> Teams lacked consistent telemetry and DR confidence. <strong>Solution:</strong> Expanded monitoring coverage and introduced Azure-based cold DR capabilities. <strong>Result:</strong> Stronger observability posture and improved business continuity readiness.</p>
-          <div class="tags">
-            <span class="tag">Zabbix</span>
-            <span class="tag">Dynatrace</span>
-            <span class="tag">App Insights</span>
-            <span class="tag">Azure DR</span>
           </div>
         </article>
       </div>
@@ -578,75 +584,67 @@
       <h2 class="section-title">Experience</h2>
       <div class="timeline">
         <article class="timeline-item">
-          <h3>Technical Advisor</h3>
-          <p class="meta">REW Technology (USA, Remote) • Jan 2021 - Present • 5 yrs 5 mos</p>
+          <h3>Senior Microsoft Engineer</h3>
+          <p class="meta">REW (USA, Remote) • Jan 2021 – Present • 5 yrs 7 mos</p>
           <ul>
-            <li>Delivered around 50 migration and modernization projects for SMB customers.</li>
-            <li>Led RDS to FSLogix migration for around 800 user profiles with custom scripting.</li>
-            <li>Migrated legacy ERP workloads to Azure Virtual Machines and Microsoft 365 Cloud PCs.</li>
-            <li>Implemented Intune and Microsoft 365 endpoint governance in hybrid environments.</li>
-            <li>Built internal PowerShell modules, reporting tooling, and migration documentation standards.</li>
-            <li>Completed 50+ technical interviews and provided structured hiring recommendations.</li>
+            <li>Delivered 50+ migration and modernization projects from legacy on-premises to hybrid and cloud environments.</li>
+            <li>Led RDS to FSLogix migration for ~800 user profiles with custom PowerShell stabilization scripting.</li>
+            <li>Designed and delivered Microsoft 365, SharePoint, Azure VM, and Cloud PC migration solutions.</li>
+            <li>Led endpoint modernization from Group Policy to Microsoft Intune, including Conditional Access.</li>
+            <li><strong>Owned and operationalized company-wide migration documentation standards</strong> &mdash; repeatable governance frameworks that improved delivery consistency and ensured knowledge retention across 50+ programs.</li>
+            <li>Designed Entra ID group schema and built PowerShell module for scalable SharePoint Hub permission management.</li>
+            <li>Built internal PowerShell tooling for AD, DHCP, file services, reporting, and migration operations.</li>
+            <li>Conducted 50+ technical interviews from Middle to Architect level with structured recommendations.</li>
           </ul>
         </article>
         <article class="timeline-item">
           <h3>Site Reliability Engineer</h3>
-          <p class="meta">Ciklum (Ukraine) • Jan 2021 - Oct 2021 • 10 mos</p>
+          <p class="meta">Ciklum (Denmark, Remote) • Mar 2020 – Jan 2021 • 10 mos</p>
           <ul>
-            <li>Migrated CI/CD delivery from classic pipelines to YAML-based Azure DevOps flows.</li>
-            <li>Supported TFS to Azure DevOps transition and modernization of build workflows.</li>
-            <li>Extended Windows and IIS monitoring with custom PowerShell and Zabbix metrics.</li>
-            <li>Assisted HAProxy and Nginx operations for production traffic management.</li>
-            <li>Automated Windows server provisioning and repeatable test environment rebuilds.</li>
-            <li>Contributed to Kubernetes and containerization assessments for legacy applications.</li>
+            <li>Modernized CI/CD delivery by migrating Azure DevOps classic pipelines to YAML.</li>
+            <li>Supported TFS to Azure DevOps transition and deployment workflow standardization.</li>
+            <li>Extended Zabbix monitoring for Windows and IIS workloads with PowerShell diagnostics integrations.</li>
+            <li><strong>Led AKS migration assessment</strong>: evaluated legacy application for Kubernetes readiness, completed test environment migration, identified architecture gaps for production, and delivered blocker documentation to architecture leadership.</li>
+            <li><strong>Stabilized test operations</strong>: improved monitoring coverage and deployment reliability, enabling QA to deploy test environments autonomously without infrastructure failures.</li>
+            <li>Supported HAProxy and Nginx operations and automated server provisioning workflows.</li>
+            <li>Built containerized Ansible execution patterns and ELK index lifecycle automation runbooks.</li>
           </ul>
         </article>
         <article class="timeline-item">
-          <h3>Infrastructure Manager</h3>
-          <p class="meta">ACINO (Ukraine) • Dec 2019 - Jan 2021 • 1 yr 2 mos</p>
+          <h3>System Administrator</h3>
+          <p class="meta">Acino (Switzerland) • Jan 2019 – Mar 2020 • 1 yr 2 mos</p>
           <ul>
-            <li>Operated VMware HA infrastructure across locations in GMP/GDPR-regulated environments.</li>
-            <li>Consolidated backup platforms from Veeam and DPM into centralized Commvault.</li>
-            <li>Improved backup policy compliance, retention consistency, and recovery governance.</li>
-            <li>Automated infrastructure configuration and auditing with Ansible and PowerShell.</li>
-            <li>Implemented workload and storage segregation to protect production performance.</li>
-            <li>Contributed to centralized monitoring rollout and operational process improvements.</li>
-          </ul>
-        </article>
-        <article class="timeline-item">
-          <h3>Senior System Administrator</h3>
-          <p class="meta">B2B Soft (Ukraine) • Apr 2013 - Dec 2019 • 6 yrs 9 mos</p>
-          <ul>
-            <li>Contributed to enterprise data-center migration from Hyper-V to VMware HA.</li>
-            <li>Standardized Windows Server provisioning with MDT golden images.</li>
-            <li>Built reusable PowerShell DSC modules and later migrated automation to Ansible.</li>
-            <li>Expanded IaC coverage across production infrastructure and HAProxy deployments.</li>
-            <li>Supported TeamCity pipelines, TFS to GitLab migration, and Octopus release workflows.</li>
-            <li>Helped coordinate production releases and rollback readiness for safer deployments.</li>
+            <li>Operated VMware HA infrastructure across multiple locations in GMP/GDPR-regulated environments.</li>
+            <li>Consolidated backup platforms (Veeam and Microsoft DPM) into Commvault with standardized retention and recovery policies.</li>
+            <li>Automated infrastructure operations with Ansible and PowerShell.</li>
+            <li>Implemented workload and storage segregation to improve production stability and reduce resource contention.</li>
+            <li>Contributed to Zabbix monitoring rollout and supported compliance-oriented change governance.</li>
           </ul>
         </article>
         <article class="timeline-item">
           <h3>Senior System Administrator</h3>
-          <p class="meta">Foxtrot (Ukraine) • Sep 2011 - Apr 2013 • 1 yr 8 mos</p>
+          <p class="meta">B2BSoft (USA) • Apr 2012 – Jan 2019 • 6 yrs 9 mos</p>
           <ul>
-            <li>Supported distributed enterprise infrastructure for around 7,000 users and mailboxes.</li>
-            <li>Onboarded and integrated remote retail locations into centralized infrastructure.</li>
-            <li>Administered Exchange 2010/2013, TMG, and Lync production environments.</li>
-            <li>Built PowerShell and PowerPivot reporting for Exchange growth and capacity tracking.</li>
-            <li>Migrated standalone gateways into a four-node TMG clustered architecture.</li>
-            <li>Automated backup, sync, and AD-driven file access provisioning workflows.</li>
+            <li>Contributed to data center migration from Hyper-V to VMware HA infrastructure.</li>
+            <li><strong>Established gold image automation framework that proved critical during production incidents</strong>: during peak-hours performance failures, enabled ~30-minute VM deployment to load balancer preventing cascading failures; framework became foundation for DSC and Ansible infrastructure operationalization.</li>
+            <li><strong>MTBF increased from ~80 hours to ~3,000 hours; MTTR reduced from ~3 hours to ~30 minutes</strong> through standardization, automation, and infrastructure consistency.</li>
+            <li>Standardized Windows Server provisioning with MDT, PowerShell DSC, and Ansible.</li>
+            <li>Built and maintained monitoring capabilities with Zabbix, Dynatrace, and App Insights.</li>
+            <li>Managed HAProxy production load balancing with Ansible-automated configuration management.</li>
+            <li>Supported TeamCity, GitLab, TFS-to-GitLab migration, and Octopus Deploy workflows.</li>
+            <li>Implemented Azure-based cold disaster recovery capabilities.</li>
           </ul>
         </article>
         <article class="timeline-item">
-          <h3>Wintel Administrator</h3>
-          <p class="meta">Group of Companies FOXTROT (Ukraine) • Nov 2006 - Sep 2010 • 3 yrs 11 mos</p>
+          <h3>Senior System Administrator</h3>
+          <p class="meta">Foxtrot (Ukraine) • 2007 – 2012 • 5+ yrs</p>
           <ul>
-            <li>Administered Windows infrastructure and endpoint operations for retail enterprise environments.</li>
-            <li>Supported core AD, server, and connectivity services across distributed business locations.</li>
-            <li>Handled troubleshooting and operational support for production Microsoft workloads.</li>
-            <li>Participated in infrastructure standardization and reliability improvements.</li>
-            <li>Maintained service continuity across multi-site business operations.</li>
-            <li>Built foundational operational expertise later applied in senior infrastructure roles.</li>
+            <li>Supported distributed retail enterprise infrastructure for ~7,000 users and mailboxes.</li>
+            <li>Administered Microsoft Exchange 2010/2013 and built PowerShell reporting for mailbox growth and database capacity.</li>
+            <li>Designed and implemented a four-node Microsoft TMG cluster, replacing standalone gateways with an HA architecture.</li>
+            <li>Managed Microsoft DPM backup and automated remote site data synchronization with PowerShell and Robocopy.</li>
+            <li>Automated AD-based file access provisioning, group/OU creation, and governance controls.</li>
+            <li>Supported remote retail site onboarding and integration into centralized enterprise infrastructure.</li>
           </ul>
         </article>
       </div>
@@ -658,13 +656,23 @@
         <article class="panel">
           <h3>Certifications</h3>
           <ul>
-            <li>AZ-104 - Microsoft Azure Administrator</li>
-            <li>AZ-700 - Azure Network Engineer Associate</li>
+            <li>AZ-104 &mdash; Microsoft Azure Administrator (2022)</li>
+            <li>AZ-700 &mdash; Azure Network Engineer Associate (2023)</li>
           </ul>
         </article>
         <article class="panel">
+          <h3>Education</h3>
+          <p>M.Sc. in Law and International Relations &mdash; Open University of Human Development &ldquo;Ukraine&rdquo; (2006)</p>
+          <p>Law background informs governance-first approach to infrastructure operations, change management, and compliance-oriented process design.</p>
+        </article>
+        <article class="panel">
           <h3>Leadership Readiness</h3>
-          <p>Practice includes delivery governance, technical interviewing, migration standards, and cross-team operating models required for lead/principal infrastructure roles.</p>
+          <ul>
+            <li>Migration governance and delivery ownership across 50+ programs</li>
+            <li>Operationalized standards that persisted after departure: gold image framework, DSC/Ansible workflows, documentation templates</li>
+            <li>Technical hiring and candidate assessment: 50+ interviews from Middle to Architect level</li>
+            <li>Cross-team alignment in both regulated environments (GMP/GDPR) and MSP delivery governance</li>
+          </ul>
         </article>
       </div>
     </section>
